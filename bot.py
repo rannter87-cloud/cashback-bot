@@ -9,7 +9,7 @@ from aiogram.types import (
 from aiogram.fsm.storage.memory import MemoryStorage
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8602960145:AAHYCvPB4-_gCTQhf3npNp90_n3y8wNtv0c")
-WEBAPP_URL = os.getenv("WEBAPP_URL", "https://your-app.railway.app")
+WEBAPP_URL = os.getenv("WEBAPP_URL", "https://cashback-bot-ce3r.onrender.com")
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
