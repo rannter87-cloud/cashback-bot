@@ -320,7 +320,9 @@ def root():
     return {"status": "ok", "message": "Cashback Bot API"}
 
 
+# Инициализация БД при импорте
+init_db()
+
 if __name__ == "__main__":
-    init_db()
     port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
